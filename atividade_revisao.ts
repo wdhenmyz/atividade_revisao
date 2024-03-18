@@ -1,6 +1,6 @@
 class FUNCIONARIO {
     public nome: string;
-    protected email: string;
+    public email: string;
     public data_nascimento: Date;
     public numero: string;
     protected cpf: string;
@@ -57,7 +57,7 @@ class MEMBRO extends FUNCIONARIO{
 
 
 class LIDER extends FUNCIONARIO{
-    equipe: string;
+    public equipe: string;
     constructor(equipe: string, nome: string, email: string, data_nascimento: Date,  numero: string, cpf: string, endereco: string[], matricula: string, cargo: string, genero?: string) {
         super(nome, email, data_nascimento, numero, cpf, endereco, matricula, cargo, genero)
         this.equipe = equipe
@@ -73,7 +73,7 @@ class LIDER extends FUNCIONARIO{
 
 class TAREFA{
     public nome_tarefa: string;
-    protected descricao: string; 
+    public descricao: string; 
     protected responsavel: MEMBRO;
     protected prazo: Date;
     protected status: string;
@@ -97,11 +97,11 @@ class TAREFA{
 
 
 class PROJETO {
-    protected nome_projeto: string;
-    protected descricao: string;
+    public nome_projeto: string;
+    public descricao: string;
     protected data_inicio: Date;
     protected data_término_prevista: Date;
-    protected statusbar: string;
+    public statusbar: string;
     protected equipe_responsavel: EQUIPE;
     protected tarefas: TAREFA[];
     constructor( nome_projeto: string, descricao: string, data_inicio: Date, data_término_prevista: Date, statusbar: string, equipe_responsavel: EQUIPE, tarefas: TAREFA[]){
