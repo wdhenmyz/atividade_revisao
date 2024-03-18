@@ -1,0 +1,39 @@
+classe FUNCIONARIO
+nesta classe terá informaçoes do funcionario em questão como
+nome 
+data de nascimento 
+cpf
+cargo 
+dados de comunicação etc.
+
+
+classe MEMBRO extende FUNCIONARIO
+como MEMBRO é um funcionário ele herdará atributos do funcionário
+e também tera seus próprios atributos como
+equipe
+tarefas
+e os projetos feitos
+
+
+classe LIDER extende FUNCIONARIO
+igual a MEMBRO o LIDER também é um funcionário e herdará os atributos dele
+seu atríbuto único sera a equipe no qual ele lidera.
+
+
+classe EQUIPE
+esta classe trará 1 LIDER e 1 ou + MEMBRO(s) para reliazar PROJETO(s) e tarefas
+terá um atributo nome para classifica-la
+um LIDER puxado da classe LIDER
+MEMBRO(s) da classe MEMBROS
+e os projetos de PROJETO
+
+
+classe TAREFA
+a classe TAREFA representara as mini atividades que um membro de uma equipe realizará durante o projeto
+seus atributos variam do nome da tarefa, descriçaõ, o MEMBRO responsável (puxara da classe MEMBRO), o prazo para completar, e o status atual
+
+
+classe PROJETO
+esta classe representa o(s) PROJETO(s) que as equipes vão realizar durante suas atividades
+nome do projeto, descricao ,data de inicio ,data de término prevista , statusbar ,equipe_responsavel ,tarefas
+são os atributos representantes desta classe
